@@ -4,13 +4,6 @@ Ce projet consiste à développer une application Django pour gérer le catalogu
 
 ---
 
-## Membres du groupe
-
-- Prénom Nom - email@univ.fr  
-- Prénom Nom - email@univ.fr  
-*(Ajouter ici les membres participants)*
-
----
 
 ## Questions et consignes du projet
 
