@@ -1,0 +1,32 @@
+{% extends 'menu.html' %}
+
+{% block title %}Formation Details{% endblock %}
+
+{% block content %}
+<body>
+    <div class="container mt-5">
+        <h1 class="mt-4">{{ formation.intitule }}</h1>
+        <p><strong>Description :</strong> {{ formation.description }}</p>
+        <p><strong>Responsable :</strong> {{ formation.responsable }}</p>
+
+       
+        <h2 class="mt-4">UE associées à cette formation</h2>
+        
+       
+        <ul class="class="table table-hover" >
+            {% for ue in ues %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>{{ ue.titre }}</span>
+                    <div class="btn-group" role="group" aria-label="Actions">
+                        <a href="{% url 'ue_detail' ue.id %}" class="btn btn-outline-info">Détails</a>
+                        <a href="{% url 'modifier_ue' m=ue.id %}" class="btn btn-outline-warning">Modifier</a>
+                        <a href="{% url 'supprimer_ue' ue.id %}" class="btn btn-outline-danger">Supprimer</a>
+                    </div>
+                </li>
+            {% empty %}
+                <p class="text-center">Aucune UE n'est associée à cette formation.</p>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+{% endblock %}

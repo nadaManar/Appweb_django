@@ -1,0 +1,40 @@
+{% extends 'menu.html' %}
+
+{% block title %}Liste des Unités d'Enseignement{% endblock %}
+
+{% block content %}
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Liste des Unités d'Enseignement</h1>
+
+        <!-- Table avec boutons pour Détails, Modifier, Supprimer -->
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ue in ues %}
+                    <tr>
+                        <td>{{ ue.titre }}</td>
+                        <td>
+                            
+                            <div class="btn-group" role="group" aria-label="Actions">
+                                <a href="{% url 'ue_detail' ue.id %}" class="btn btn-outline-info mb-2">Détails</a>
+                                <a href="{% url 'modifier_ue' m=ue.id %}" class="btn btn-outline-warning mb-2">Modifier</a>
+                                <a href="{% url 'supprimer_ue' ue.id %}" class="btn btn-outline-danger mb-2">Supprimer</a>
+                            </div>
+                        </td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="2" class="text-center">Aucune UE trouvée.</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+{% endblock %}

@@ -1,0 +1,39 @@
+[
+{
+  "model": "uo.formation",
+  "pk":1,
+  "fields": {
+    "intitule": "Licence Informatique — Parcours Ingénierie informatique",
+    "description": "Cette licence a pour objectif de transmettre une culture générale de haut niveau en informatique",
+    "responsable": 2
+  }
+},
+{
+  "model": "uo.formation",
+  "pk": 2,
+  "fields": {
+    "intitule": "Licence Informatique — Parcous MIAGE",
+    "description": "Cette licence est spécialisée dans l'informatique et la gestion",
+    "responsable": 3
+  }
+},
+{
+  "model": "uo.formation",
+  "pk": 3,
+  "fields": {
+    "intitule": "Master Informatique",
+    "description": "Ce master est spécialisé dans l'approfondissement des compétences en recherche et développement informatique",
+    "responsable": 4
+  }
+},
+{
+  "model": "uo.formation",
+  "pk": 4,
+  "fields": {
+    "intitule": "Master MIAGE",
+    "description": "Expertise en informatique et gestion des entreprises",
+    "responsable": 5
+  }
+}
+
+]

@@ -1,0 +1,15 @@
+{% extends 'menu.html' %}
+    {% block title %}
+    Supprimer UE
+    U_e_all
+    {% endblock %}
+
+{% block content %}
+      <form method="post">
+        <h1>- Supprimer {{ ue.titre }}</h1>
+        {% csrf_token %}
+           <p>Êtes-vous sûr de vouloir supprimer cette UE : <strong>{{ ue.titre }}</strong> ?</p>
+        <button type="submit" class="btn btn-danger">Confirmer la suppression</button>
+     </form>
+    
+{% endblock %} 

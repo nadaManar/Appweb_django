@@ -1,0 +1,40 @@
+
+{% extends 'menu.html' %}
+    {% block title %}
+    U_e_details
+    {% endblock %}
+</head>
+{% block content %}
+<div class="container mt-4">
+  <body>
+    <h1 class="text-center mb-4">Unité d'enseignement : {{ ue.titre }}</h1>
+
+    <p><strong>Description :</strong> {{ ue.description }}</p>
+    <p><strong>Crédits ECTS :</strong> {{ ue.credits }}</p>
+    <p><strong>Volume horaire :</strong></p>
+    <ul>
+        <li><strong>CM :</strong> {{ ue.CM }} heures</li>
+        <li><strong>TD :</strong> {{ ue.TD }} heures</li>
+        <li><strong>TP :</strong> {{ ue.TP }} heures</li>
+    </ul>
+
+    <h2 class="mt-4">Les Formations associées :</h2>
+    <ul class="list-group">
+        {% for formation in formations %}
+            <li class="list-group-item"><a href="{% url 'formation_detail' formation.id %}" class="text-decoration-none">{{ formation.intitule }}</a></li>
+        {% empty %}
+            <li class="list-group-item">Aucune formation n'est associée à cette unité d'enseignement.</li>
+        {% endfor %}
+    </ul>
+
+    <h2 class="mt-4">Les Responsables :</h2>
+    <ul class="list-group">
+        {% for responsable in ue.responsables.all %}
+            <li class="list-group-item">{{ responsable.first_name }} {{ responsable.last_name }}</li>
+        {% empty %}
+            <li class="list-group-item">Pas de responsables assignés.</li>
+        {% endfor %}
+    </ul>
+</body>
+</div>
+{% endblock %}

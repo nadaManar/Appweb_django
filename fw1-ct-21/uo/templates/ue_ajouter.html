@@ -1,0 +1,16 @@
+{% extends 'menu.html' %}
+    {% block title %}
+    U_e_ajoutés
+    {% endblock %}
+    
+{% block content %}
+  <h2 class="mb-4 text-center text-primary">Ajouter une UE</h2>
+  <form method="post"class="shadow p-4 bg-light rounded">
+    {% csrf_token %}
+    {{ form.as_p }}
+      <div class="d-flex justify-content-between mt-4">
+       <button type="submit" class="btn btn-primary btn-lg w-50 ">Ajouter</button>
+       <a href="{% url 'ue_all' %}" class="btn btn-secondary btn-lg w-50">Retour à la liste des Unités d'enseignement</a>
+      </div>
+  </form>
+{% endblock %}

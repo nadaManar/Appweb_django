@@ -1,0 +1,297 @@
+[
+{
+  "model": "uo.ue",
+  "pk": 1,
+  "fields": {
+    "titre": "Algorithmes Avancés",
+    "description": "Étude des algorithmes complexes",
+    "CM": 20,
+    "TD": 10,
+    "TP": 10,
+    "credits": 6,
+    "formations": [
+      1
+    ],
+    "responsables": [
+      2
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 2,
+  "fields": {
+    "titre": "Bases de Données",
+    "description": "Introduction et gestion des bases de données",
+    "CM": 15,
+    "TD": 15,
+    "TP": 10,
+    "credits": 5,
+    "formations": [
+      1
+    ],
+    "responsables": [
+      3
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 3,
+  "fields": {
+    "titre": "Programmation Web",
+    "description": "Développement d'applications web",
+    "CM": 20,
+    "TD": 20,
+    "TP": 20,
+    "credits": 6,
+    "formations": [
+      1,
+      2
+    ],
+    "responsables": [
+      2,
+      4
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 4,
+  "fields": {
+    "titre": "Systèmes d'Exploitation",
+    "description": "Fonctionnement des systèmes d'exploitation",
+    "CM": 25,
+    "TD": 15,
+    "TP": 15,
+    "credits": 6,
+    "formations": [
+      1
+    ],
+    "responsables": [
+      4
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 5,
+  "fields": {
+    "titre": "Intelligence Artificielle",
+    "description": "Introduction à l'intelligence artificielle",
+    "CM": 30,
+    "TD": 10,
+    "TP": 10,
+    "credits": 6,
+    "formations": [
+      3
+    ],
+    "responsables": [
+      5
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 6,
+  "fields": {
+    "titre": "Réseaux Informatiques",
+    "description": "Les bases des réseaux informatiques",
+    "CM": 20,
+    "TD": 10,
+    "TP": 20,
+    "credits": 5,
+    "formations": [
+      1,
+      4
+    ],
+    "responsables": [
+      2
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 7,
+  "fields": {
+    "titre": "Sécurité Informatique",
+    "description": "Principes de la sécurité informatique",
+    "CM": 25,
+    "TD": 15,
+    "TP": 20,
+    "credits": 6,
+    "formations": [
+      3,
+      4
+    ],
+    "responsables": [
+      3
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 8,
+  "fields": {
+    "titre": "Méthodes Formelles",
+    "description": "Utilisation de méthodes formelles en informatique",
+    "CM": 20,
+    "TD": 20,
+    "TP": 10,
+    "credits": 6,
+    "formations": [
+      2,
+      3
+    ],
+    "responsables": [
+      4
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 9,
+  "fields": {
+    "titre": "Gestion de Projet",
+    "description": "Techniques de gestion de projet",
+    "CM": 20,
+    "TD": 15,
+    "TP": 15,
+    "credits": 5,
+    "formations": [
+      2
+    ],
+    "responsables": [
+      5
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 10,
+  "fields": {
+    "titre": "Analyse de Données",
+    "description": "Techniques d'analyse de données",
+    "CM": 25,
+    "TD": 15,
+    "TP": 10,
+    "credits": 6,
+    "formations": [
+      4
+    ],
+    "responsables": [
+      2
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 11,
+  "fields": {
+    "titre": "Théorie des Graphes",
+    "description": "Introduction à la théorie des graphes",
+    "CM": 15,
+    "TD": 20,
+    "TP": 10,
+    "credits": 5,
+    "formations": [
+      3
+    ],
+    "responsables": [
+      3
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 12,
+  "fields": {
+    "titre": "Cloud Computing",
+    "description": "Principes du cloud computing",
+    "CM": 20,
+    "TD": 10,
+    "TP": 15,
+    "credits": 6,
+    "formations": [
+      4
+    ],
+    "responsables": [
+      5
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 13,
+  "fields": {
+    "titre": "Statistiques Descriptives",
+    "description": "Introduction aux statistiques descriptives et à leurs applications",
+    "CM": 20,
+    "TD": 10,
+    "TP": 10,
+    "credits": 5,
+    "formations": [
+      3
+    ],
+    "responsables": [
+      2
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 14,
+  "fields": {
+    "titre": "Comptabilité Générale",
+    "description": "Principes de comptabilité générale et techniques comptables",
+    "CM": 25,
+    "TD": 15,
+    "TP": 10,
+    "credits": 6,
+    "formations": [
+      2
+    ],
+    "responsables": [
+      3
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 15,
+  "fields": {
+    "titre": "Projet Professionnel",
+    "description": "Développement du projet professionnel de l'étudiant",
+    "CM": 15,
+    "TD": 10,
+    "TP": 15,
+    "credits": 4,
+    "formations": [
+      
+      4
+    ],
+    "responsables": [
+      4
+    ]
+  }
+},
+{
+  "model": "uo.ue",
+  "pk": 16,
+  "fields": {
+    "titre": "Préparation aux Techniques de Communication",
+    "description": "Compétences en communication orale et écrite",
+    "CM": 20,
+    "TD": 20,
+    "TP": 10,
+    "credits": 5,
+    "formations": [
+      5
+    ],
+    "responsables": [
+      1
+    ]
+  }
+}
+
+]

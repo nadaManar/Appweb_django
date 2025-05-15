@@ -1,0 +1,92 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$DPlL6A1E0zgqlRKn2M4aE3$dbqzScjBLWfg/LHpRPAWoI1aNIzmFCYFfLbjYn4JbOw=",
+    "last_login": "2024-12-18T13:15:47.701Z",
+    "is_superuser": true,
+    "username": "group21",
+    "first_name": "",
+    "last_name": "",
+    "email": "fatima.bounadi@etu.univ-orleans.fr",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-12-18T12:53:52.874Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$PgIvb73Vc5m32EVi9LGHmp$UK7quOM5+1R3D1cJV2wnJA18WsMP6/tfjuXUSU2uBVI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Jean-Michel Couvreur",
+    "first_name": "Jean-Michel Couvreur",
+    "last_name": "Couvreur",
+    "email": "jean-michel.couvreur@univ-orleans.fr",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-12-18T13:27:47.791Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$NOpG2JDgoGAGq7SybTZONn$2hOgIMMhM+RqWjZzEViuu6vg/Z9RPsvRX+hIAr4biLw=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Frédéric Loulergue",
+    "first_name": "Frédéric",
+    "last_name": "Loulergue",
+    "email": "frédéric.loulergue@univ-orleans.fr",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-12-18T13:28:29.077Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$vJHU6YXChHLmsjSeBq0rQo$nqEotxvRvjpYDaZYR5IA0yEYv5iidOCgEZ5RkT25DQI=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Timothée Martinod",
+    "first_name": "Timothée",
+    "last_name": "Martinod",
+    "email": "timothee.martinod@univ-orleans.fr",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-12-18T13:30:24.052Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$870000$h9xPXGh3mE3JOUmyTq35pd$F+XkKEgUoM04J1Z1ACDJ4Xc88BHpZ8hgvbsYtEs2i/U=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Sébastien Rivault ",
+    "first_name": "Sébastien",
+    "last_name": "Rivault",
+    "email": "sebastien.rivault@univ-orleans.fr",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-12-18T13:30:41.505Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

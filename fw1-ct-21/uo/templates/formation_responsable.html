@@ -1,0 +1,43 @@
+{% extends 'menu.html' %}
+
+{% block title %}Détails de la formation{% endblock %}
+
+{% block content %}
+  <div class="container mt-4">
+    <h1 class="text-center mb-4">Détails de la formation : {{ formation.intitule }}</h1>
+
+    <h3 class="mb-3">Informations sur la formation</h3>
+    <div class="mb-4">
+      <p><strong>Nombre d'UE rattachées à cette formation :</strong> {{ total_ues }}</p>
+    </div>
+
+    <h4>Liste des responsables d'UE :</h4>
+    <ul class="list-group mb-4">
+      {% for responsable in responsables_ue %}
+        <li class="list-group-item">
+          {{ responsable.first_name }} {{ responsable.last_name }}
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div class="row">
+      <div class="col-md-6">
+        <p><strong>Volume total de CM :</strong> {{ total_cm }} heures</p>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Volume total de TD :</strong> {{ total_td }} heures</p>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Volume total de TP :</strong> {{ total_tp }} heures</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p><strong>Volume total en heures équivalent TD :</strong> {{ total_heures_td }} heures</p>
+      </div>
+      <div class="col-md-6">
+        <p><strong>Nombre total d'ECTS :</strong> {{ total_ects }}</p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

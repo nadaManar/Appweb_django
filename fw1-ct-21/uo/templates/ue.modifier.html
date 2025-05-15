@@ -1,0 +1,25 @@
+{% extends 'menu.html' %}
+    {% block title %}
+    U_e_modifier
+    {% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4 text-center text-primary"> Modifier Ue : {{ ue.titre }}</h1>
+    <form method="post"  class="shadow p-4 bg-light rounded">
+        {% csrf_token %}
+        <div class="mb-3">
+            {{ form.as_p }}
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-lg w-100" >Enregistrer les modifications</button>
+    </form>
+  
+
+  {% for ue in ues %}
+    <div class="list-group mb-3">
+        {{ ue.titre }} - 
+        <a href="{% url 'modifier_ue' m=ue.id %}" class="btn btn-sm btn-warning">Modifier</a>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}
